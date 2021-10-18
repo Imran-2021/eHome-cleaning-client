@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <section class="headerr">
         <nav>
-        <Link  className="logo text-link" to="/">eHouse-Clean</Link>
+        <Link  className="logo text-link" to="/">eHouse-Cleaning</Link>
             <div class="nav-links" id="nav-links">
                 <h5 onClick={hidemenu}><FaTimes/></h5>
                 <ul onClick={hidemenu}>
