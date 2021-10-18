@@ -7,7 +7,7 @@ const Home = () => {
             <div className="container">
                 <h2>WelCome to <span className="text-warning">eHome-Clean Service</span> </h2>
                 <p>we are here to help you , to make your home area clean and healthy.</p>
-                <button className="btn btn-outline-primary"><Link class="muted" to="/services">Chose your fabourite book</Link></button>
+                <button className="btn btn-outline-primary"><Link class="muted" to="/services">Chose your fabourite Services</Link></button>
 
             </div>
         </div>
