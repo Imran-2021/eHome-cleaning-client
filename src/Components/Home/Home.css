@@ -1,0 +1,20 @@
+.home{
+    min-height: 90vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: #ddd;
+    font-size: 25px;
+    font-weight: 500;
+}
+.muted{
+    color: inherit !important;
+    text-decoration: inherit !important;
+}
+.btn-outline-primary:hover{
+    background: rgb(39, 5, 5,0.2) !important;
+}
