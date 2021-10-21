@@ -49,7 +49,7 @@ const Footer = () => {
             <div className="col-md-7 col-lg-8">
                 <p className="ms-5"> &copy; Copyright {new Date().getFullYear()} All right reserved by:-
                     <Link to="#" style={{textDecoration:"none"}}>
-                        <strong className="text-warning"> We Clean</strong>
+                        <strong className="text-warning"> eHome-Cleaning</strong>
                     </Link>
                 </p>
             </div>
