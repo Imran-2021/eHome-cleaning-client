@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
 import About from "./Components/About/About";
+import Admin from "./Components/Admin/Admin";
 import Contact from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home";
 import SignIn from "./Components/LogInPage/SignIn";
@@ -12,7 +13,25 @@ import SignUp from "./Components/LogInPage/SignUp";
 import Navbar from "./Components/Navbar/Navbar";
 import NoMatch from "./Components/NoMatch/NoMatch";
 import Services from "./Components/Services/Services";
+import { FaArrowUp } from "react-icons/fa";
+import User from "./Components/User/User";
 function App() {
+  const [show, handleShow] = useState(false);
+    
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        handleShow(true);
+      } else handleShow(false);
+    });
+    return () => {
+      window.removeEventListener('scroll');
+    };
+  }, []);
+
+  const backToTop = () => {
+    window.scroll({ top: 0, behavior: 'smooth' });
+  };
   return (
     <>
     {/* <img src="Images/House-Cleaning-service.jpg" alt="" /> */}
@@ -40,10 +59,18 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
+          <Route path="/user">
+            <User />
+          </Route>
+          <Route path="/admin">
+            <Admin />
+          </Route>
           <Route exact path="*">
             <NoMatch />
           </Route>
         </Switch>
+        {show &&<ul class="smothscroll" onClick={() => backToTop()}   ><li id="myBtn"><a href="#navbar"><FaArrowUp /></a></li></ul>
+             }
     </Router>
     </>
   );

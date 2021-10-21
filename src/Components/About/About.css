@@ -22,7 +22,10 @@
     font-family: 700;
     color: #000;
 }
-.about-div h3,p{
+.about-div h3{
+    color: #3498db;
+}
+.pp{
     color: #3498db;
 }
 .aboutp{

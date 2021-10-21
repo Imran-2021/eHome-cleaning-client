@@ -6,18 +6,18 @@ import {
   import "./Navbar.css"
 const Navbar = () => {
     const showmenu=()=>{
-        document.getElementById("nav-links").style.right="0";
+        document.getElementById("nav-links").style.left="0";
         console.log("object");
     }
   const hidemenu=()=>{
-        document.getElementById("nav-links").style.right="-200px";
+        document.getElementById("nav-links").style.left="-200px";
     }
     return (
         <section class="headerr">
         <nav>
         <Link  className="logo text-link" to="/">eHouse-Cleaning</Link>
             <div class="nav-links" id="nav-links">
-                <h5 onClick={hidemenu}><FaTimes/></h5>
+                <h5 className="menuright" onClick={hidemenu}><FaTimes/></h5>
                 <ul onClick={hidemenu}>
                     <li><Link to="/home">HOME</Link></li>
                     <li><Link to="/services">SERVICES</Link></li>
@@ -25,7 +25,7 @@ const Navbar = () => {
                     <li><Link to="/about">ABOUT</Link></li>
                     <li><Link to="/contact">CONTACT</Link></li>
                     <li><Link to="/sign-in">SIGN IN</Link></li>
-                    <li><Link to="/Admin">USER</Link></li>
+                    <li ><Link to="/Admin">USER</Link></li>
                     <li><Link to="/Admin">ADMIN</Link></li>
                 </ul>
             </div>

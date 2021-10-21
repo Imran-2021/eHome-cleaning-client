@@ -7,7 +7,7 @@ const About = () => {
                 <div className="about-div">
                     <h1>Wekcome to about page !</h1>
                     <h3>eHomeCleaning services</h3>
-                    <p>the world class company !!!</p>
+                    <p className="pp">the world class company !!!</p>
                     <p className="aboutp">We are here to help you make an We provide best solutions for a Clean Environment. If you need any help in cleaning or maintenance.</p>
                     <div class="mtt-3"><a class="btn-get-started" href="/contact">Contact Now</a></div>
                 </div>
