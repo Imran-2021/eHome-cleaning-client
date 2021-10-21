@@ -1,20 +1,125 @@
 /* support.js */
 .support{
     width: 100%;
-    min-height: 90vh;
-
+    min-height: 30vh;
+    /* position: relative; */
 }
 .support-in{
     width: 90%;
+    min-height: 10vh;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-gap: 20px;
     justify-content:center;
     align-items: center;
+    position: relative;
+    bottom: 50px;
 }
 .support-inn{
     display: flex;
     justify-content:center;
     align-items: center;
+    border: 2px solid red;
+    border-radius:50%;
+    width: 25vh;
+    height: 25vh;
+    margin: auto;
+    background: #0b0f0f;
+    color: white;
+    text-transform: uppercase;
+    font-size: 23x;
+}
+.ahh{
+    position: relative;
+    bottom:30px;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 29px;
+}
+
+/* servicesType */
+.servicesType{
+    width: 100%;
+    min-height: 60vh;
+}
+.servicesType-in{
+    min-height:60vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.servicesType-inn{
+    width: 40%;
+    margin: auto;
+}
+@media (max-width: 750px) {
+    .servicesType-in{
+    flex-direction: column-reverse;
+
+    }
+}
+.dt-sc-fancy-list.dt-sc-icon-list li {
+    border-bottom: 1px dashed #d7d7d7;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding: 0 0 10px;
+    font-size: 16px;
+}
+he2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+
+}
+ul.dt-sc-fancy-list {
+    display: inline-block;
+}
+ul {
+    list-style-type: none;
+    list-style-position: inside;
+}
+ol, ul {
+    list-style: none;
+}ul, ol, pre, code {
+    margin-bottom: 20px;
+}
+
+/* FeaturedProducts- */
+.feature{
+    min-height: 60vh;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.feature-in{
+   display: flex;
+   flex-direction: row;
+   gap:20px;
+   flex-wrap: wrap;
+   justify-content:center;
+   align-items: center;
+    min-height:60vh;
+    width: 90%;
+    margin:20px auto;
+    margin-bottom: 50px;
+}
+.feature h2{
+    text-align: center;
+}
+.featuree-inn{
+    padding: 10px;
+    border: 1px solid red;
+    height: 300px;
+    width: 300px;
+
 }

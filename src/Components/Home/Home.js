@@ -1,6 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../Footer/Footer';
+import Services from '../Services/Services';
 import "./Home.css"
+import ExtraFeture from './HomeComponent/ExtraFeture';
+import FeactureProducts from './HomeComponent/FeaturedProducts';
+import Reviews from './HomeComponent/Reviews';
+import ServicesType from './HomeComponent/ServicesType';
 import Support from "./HomeComponent/Support"
 const Home = () => {
     return (
@@ -13,7 +19,17 @@ const Home = () => {
 
             </div>
         </div>
+
         <Support />
+        
+        <hr style={{backgroud:"red",margin:"20px"}} />
+        <ServicesType/>
+        <hr style={{backgroud:"red",margin:"20px"}} />
+        <Services/>
+        <FeactureProducts/>
+        <ExtraFeture/>
+        <Reviews/>
+        <Footer/>
         </>
     );
 };

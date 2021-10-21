@@ -2,22 +2,26 @@ import React from 'react';
 import "./HomeComponent.css"
 const Support = () => {
     return (
+        <>
         <div className="support">
             <div className="support-in">
                 <div className="support-inn">
-                    <p>lorem1</p>
+                    <p>Global Locations</p>
                 </div>
                 <div className="support-inn">
-                    <p>lorem2</p>
+                    <p>Anytime Support</p>
                 </div>
                 <div className="support-inn">
-                    <p>lorem3</p>
+                    <p>Quick Process</p>
                 </div>
                 <div className="support-inn">
-                    <p>lorem4</p>
+                    <p>Spend Efficiently</p>
                 </div>
             </div>
+            
         </div>
+        <h2 className="ahh">THE BEST TEAM IS HERE IN YOUR CITY</h2>
+        </>
     );
 };
 

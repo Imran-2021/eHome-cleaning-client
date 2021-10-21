@@ -1,7 +1,28 @@
 .services{
-    min-height: 90vh;
+    min-height: 60vh;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    box-sizing: border-box;
+
+}
+.services-in{
+   display: flex;
+   flex-direction: row;
+   gap:20px;
+   flex-wrap: wrap;
+   justify-content:center;
+   align-items: center;
+    min-height:60vh;
+    width: 90%;
+    margin:20px auto;
+    margin-bottom: 50px;
+}
+.services h2{
+    text-align: center;
+}
+.servicess-inn{
+    padding: 10px;
+    border: 1px solid red;
+    height: 300px;
+    width: 300px;
+
 }
