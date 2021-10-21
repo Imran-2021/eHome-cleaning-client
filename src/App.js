@@ -3,9 +3,9 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import About from "./Components/About/About";
+import Contact from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home";
 import SignIn from "./Components/LogInPage/SignIn";
 import SignUp from "./Components/LogInPage/SignUp";
@@ -36,6 +36,9 @@ function App() {
           </Route>
           <Route path="/sign-up">
             <SignUp />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
           <Route exact path="*">
             <NoMatch />

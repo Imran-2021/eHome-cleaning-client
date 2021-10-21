@@ -21,10 +21,11 @@ const Navbar = () => {
                 <ul onClick={hidemenu}>
                     <li><Link to="/home">HOME</Link></li>
                     <li><Link to="/services">SERVICES</Link></li>
-                    <li><Link to="/blogs">BLOGS</Link></li>
+                    {/* <li><Link to="/blogs">BLOGS</Link></li> */}
                     <li><Link to="/about">ABOUT</Link></li>
                     <li><Link to="/contact">CONTACT</Link></li>
                     <li><Link to="/sign-in">SIGN IN</Link></li>
+                    <li><Link to="/Admin">USER</Link></li>
                     <li><Link to="/Admin">ADMIN</Link></li>
                 </ul>
             </div>
