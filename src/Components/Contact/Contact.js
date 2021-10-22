@@ -1,12 +1,12 @@
 import React from 'react';
-
+import "./Contact.css"
 const Contact = () => {
     return (
-        <>
+        <div className="contact">
             <div className="my-5">
                 <h2 className="text-center">Contact Us</h2>
             </div>
-            <div className="container contact_div">
+            <div className="container contact_div ">
                 <div className="row">
                     <div className="col-md-6 col-10 mx-auto">
                         <from>
@@ -27,13 +27,13 @@ const Contact = () => {
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="textmessage" placeholder="write your message"></textarea>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100" type="submit">Submit form</button>
+                                <button class="btn btn-primary w-100 p-2" type="submit">Submit form</button>
                             </div>
                         </from>
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

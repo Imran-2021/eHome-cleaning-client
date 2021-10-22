@@ -1,9 +1,11 @@
 import React from 'react';
+import FeactureProducts from '../Home/HomeComponent/FeaturedProducts';
 import "./Services.css"
 const Services = () => {
     return (
+        <>
         <div className="services">
-            <h2>Our Services</h2>
+            <h2 className="mt-5">Our Services</h2>
             <div className="services-in">
                 
                 <div className="servicess-inn">
@@ -20,6 +22,8 @@ const Services = () => {
                 </div>
                </div>
         </div>
+        <FeactureProducts/>
+        </>
     );
 };
 

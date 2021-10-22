@@ -40,11 +40,11 @@ const extrainfo = [
 ]
 const ExtraFeture = () => {
     return (
-    <section className=" container"  style={{minHeight:"500px", backgroundColor:"#ddd"}} >
-            <h2 className="text-center pt-3">We provide best solutions for a Clean Environment.</h2>
-            <div className="d-flex justify-content-center">
+    <section className=" container extraF mb-5 pb-5"  style={{minHeight:"500px", backgroundColor:"#ddd"}} >
+            <h2 className="text-center pt-5 mt-5 ">We provide best solutions for a Clean Environment.</h2>
+            <div className=" ">
 
-                <div className="w-75 row d-flex align-items-center">
+                <div className="Extra-d">
                     {
                         extrainfo.map(info => <ExtraInfoCard info={info} key={info.title}/>)
                     }

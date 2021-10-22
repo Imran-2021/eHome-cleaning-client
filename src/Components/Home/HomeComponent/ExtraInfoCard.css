@@ -8,3 +8,14 @@
 .info-icon{
     margin-right: 10px;
 }
+/* extraFeture  */
+.extraF{
+    min-height: 70vh !important;
+}
+.Extra-d{
+    min-height: 70vh !important ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}

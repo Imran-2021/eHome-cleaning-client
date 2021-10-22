@@ -38,3 +38,7 @@
     border-radius: 4px;
 
 }
+.styleofbody{
+    min-height: 70vh;
+    margin-bottom: 40px;
+}

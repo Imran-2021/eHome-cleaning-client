@@ -15,6 +15,7 @@ import NoMatch from "./Components/NoMatch/NoMatch";
 import Services from "./Components/Services/Services";
 import { FaArrowUp } from "react-icons/fa";
 import User from "./Components/User/User";
+import Footer from "./Components/Footer/Footer";
 function App() {
   const [show, handleShow] = useState(false);
     
@@ -71,6 +72,7 @@ function App() {
         </Switch>
         {show &&<ul class="smothscroll" onClick={() => backToTop()}   ><li id="myBtn"><a href="#navbar"><FaArrowUp /></a></li></ul>
              }
+    <Footer/>
     </Router>
     </>
   );
