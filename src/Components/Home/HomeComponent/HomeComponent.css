@@ -95,13 +95,22 @@ ol, ul {
 }
 
 /* FeaturedProducts- */
+.feacture-products{
+    width: 100%;
+    min-height: 60vh;
+    background: #0d0c6b;
+    color: white;
+}
 .feature{
     min-height: 60vh;
-    width: 100%;
     box-sizing: border-box;
-
+    width: 86.2%;
+    margin: auto;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
 }
 .feature-in{
+ 
    display: flex;
    flex-direction: row;
    gap:20px;
@@ -109,9 +118,11 @@ ol, ul {
    justify-content:center;
    align-items: center;
     min-height:60vh;
-    width: 90%;
     margin:20px auto;
-    margin-bottom: 50px;
+    margin-bottom: -50px;
+    padding-bottom: 50px;
+ 
+  
 }
 .feature h2{
     text-align: center;

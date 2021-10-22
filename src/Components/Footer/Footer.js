@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import "./Footer.css"
 const Footer = () => {
     return (
         <div>
-<footer className="bg-dark text-white pt-5 pb-4">
-    <div className="container text-md-left">
+
+<footer id="bg-dark" className=" text-white pt-5 pb-4" style={{overflow: 'hidden'}}>
+    <div className="container text-md-left" style={{overflow: 'hidden'}}>
         <div className="row text-md-left">
             <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h5 className="text-uppercase mb-4 font-weight-bold text-warning">company name</h5>

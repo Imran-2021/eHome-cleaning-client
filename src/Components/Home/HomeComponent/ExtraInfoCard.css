@@ -10,9 +10,20 @@
 }
 /* extraFeture  */
 .extraF{
+    width: 100%;
     min-height: 70vh !important;
+    background: #d6a211!important;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.extraE{
+    background: #d6a211 ;
+    position: relative;
+    bottom: -50px;
 }
 .Extra-d{
+    width: 90%;
+    margin: auto;
     min-height: 70vh !important ;
     display: flex;
     flex-wrap: wrap;
