@@ -47,7 +47,7 @@
 }
 .servicesType-in{
     min-height:60vh;
-    width: 90%;
+    width: 87%;
     margin: auto;
     display: flex;
     gap: 30px;
@@ -57,7 +57,7 @@
     
 }
 .servicesType-inn{
-    width: 40%;
+    width: 50%;
     margin: auto;
 }
 @media (max-width: 750px) {
@@ -142,4 +142,8 @@ ol, ul {
     height: 300px;
     width: 300px;
 
+}
+
+ul{
+    padding-left: 0px;
 }
