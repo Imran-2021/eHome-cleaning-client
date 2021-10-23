@@ -6,7 +6,7 @@ const FeactureProducts = () => {
     const [feactureProduct, setFeactureProduct] = useState(FakeFeatureProduct)
 
     return (
-        <div  className="feacture-products pb-5">
+        <div  className="feacture-products">
         <div className="feature">
             <h2 className="pt-5 pb-5">Our FeatureProducts - </h2>
             <div className="feature-in">
@@ -15,7 +15,7 @@ const FeactureProducts = () => {
                       feactureProduct.map(x => {
                         const {img,name,price,details,Categories}=x
                         return (
-                            <div className="servicess-inn">
+                            <div className="servicess-inn mb-5">
                                 <img width="100%" height="200px" src={img} alt="" />
                                 <h3 className="py-2">{name}</h3>
                                 <h5 className="py-1">${price}</h5>
