@@ -6,7 +6,7 @@ const FeactureProducts = () => {
     const [feactureProduct, setFeactureProduct] = useState(FakeFeatureProduct)
 
     return (
-        <div  className="feacture-products">
+        <div  className="feacture-products pb-5">
         <div className="feature">
             <h2 className="pt-5 pb-5">Our FeatureProducts - </h2>
             <div className="feature-in">
