@@ -12,7 +12,7 @@ const Reviews = () => {
     return (
         <div className="styleofbodyf" >
         <section className=" styleofbody mt-5 pb-5 container reviews"  style={{height:"100%", backgroundColor:"#ddd"}} >
-            <h2 className="text-center pt-5 text-danger">-Testimonial-</h2>
+            <h2 className="text-center pt-5 text-primary">Our Client Reviews</h2>
             <div className="d-flex justify-content-center  flex-wrap">
 
                 <div className="stylereview">
