@@ -100,7 +100,7 @@ ol, ul {
     min-height: 60vh;
     background: #0d0c6b;
     color: white;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 .feature{
     min-height: 60vh;
@@ -110,7 +110,7 @@ ol, ul {
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
 }
-@media (max-width:400px) {
+@media (max-width:700px) {
     .feature{
        
         border-left: none;
