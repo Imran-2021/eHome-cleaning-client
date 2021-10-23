@@ -13,6 +13,14 @@
     border-right: 1px solid rgb(114, 23, 23);
     padding-bottom: 50px;
 }
+@media (max-width:400px) {
+    .services{
+        box-sizing: border-box;
+        border-left: none;
+        border-right: none;
+
+    }
+}
 .services-in{
     
     min-height: 60vh;
