@@ -8,7 +8,7 @@ const FeactureProducts = () => {
     return (
         <div  className="feacture-products">
         <div className="feature">
-            <h2 className="pt-5">Our FeatureProducts - </h2>
+            <h2 className="pt-5 pb-5">Our FeatureProducts - </h2>
             <div className="feature-in">
 
                   {
@@ -16,7 +16,7 @@ const FeactureProducts = () => {
                         const {img,name,price,details,Categories}=x
                         return (
                             <div className="servicess-inn">
-                                <img width="100%" src={img} alt="" />
+                                <img width="100%" height="200px" src={img} alt="" />
                                 <h3 className="py-2">{name}</h3>
                                 <h5 className="py-1">${price}</h5>
                                 <p className="py-1">{details}</p>
