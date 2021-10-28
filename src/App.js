@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,7 +16,10 @@ import Services from "./Components/Services/Services";
 import { FaArrowUp } from "react-icons/fa";
 import User from "./Components/User/User";
 import Footer from "./Components/Footer/Footer";
+import PrivateRoute from "./Components/LogInPage/PrivateRoute";
+export const userContext = createContext();
 function App() {
+  const [loggedInUser,setLoggedInUser]=useState({})
   const [show, handleShow] = useState(false);
     
   useEffect(() => {
@@ -34,7 +37,7 @@ function App() {
     window.scroll({ top: 0, behavior: 'smooth' });
   };
   return (
-    <>
+    <userContext.Provider value={[loggedInUser,setLoggedInUser]}>
     {/* <img src="Images/House-Cleaning-service.jpg" alt="" /> */}
     <Router>
       <Navbar/>
@@ -60,9 +63,9 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
-          <Route path="/user">
+          <PrivateRoute path="/user">
             <User />
-          </Route>
+          </PrivateRoute>
           <Route path="/admin">
             <Admin />
           </Route>
@@ -74,7 +77,7 @@ function App() {
              }
     <Footer/>
     </Router>
-    </>
+    </userContext.Provider>
   );
 }
 

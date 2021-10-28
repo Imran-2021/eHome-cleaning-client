@@ -20,7 +20,7 @@ const Services = () => {
                                         <h5 className="py-2">${cost}</h5>
                                         <p className="py-2">{type}</p>
                                         <h5 className="py-4">{note}</h5>
-                                      <Link to="/user">  <button className="btn btn-primary w-50 m-auto"> Buy Service </button></Link>
+                                      <Link to="/user">  <button onClick={()=>window.scrollTo(0,0)} className="btn btn-primary w-50 m-auto"> Buy Service </button></Link>
                                     </div>
                                 )
                             })
